@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+  }
+
+.all{
+    background-image: url("https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.logo{
+    width: 7.5vw;
+    height: auto;
+}
+
+
+.nav-button{
+    background-color: #E1AD01;
+    color: #0C3F04;
+    border-radius: 12%;
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+}
+.all {
+    height: 100%;
+  }
+
+nav {
+  height: 5.625vw;
+}
+
+.navbar-nav{
+    justify-content: end;
+}
+
+.nav-link{
+    margin-left: 7%;
+    color: #DDEFDB;
+    font-size: 2.2vw;
+    font-weight: 25%;
+}
+
+.nav-link.active{
+    font-size: 2.4vw;
+    font-weight: 30%;
+    color: #a3b3a1;
+}

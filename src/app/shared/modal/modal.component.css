@@ -1,0 +1,46 @@
+.button{
+    background-color: #D396BE; /* Green */
+    border: none;
+    border-radius: 2vw;
+    color: #0D5325;
+    padding: 0 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 16vh;
+    margin-bottom: 3vh;
+  }
+
+  .modal-content{
+    background-color: #fffaea;
+    color: #0D5325;
+  }
+
+.tab{
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.error{
+  color: red;
+}
+
+.submit{
+  margin-top: 2vh;
+  margin-left: 2vw;
+  background-color: #D396BE;
+  color: #0D5325;
+  font-weight: 500;
+}
+
+.label{
+  margin-right: 2vw;
+}
+
+/*@media screen and (max-width: 767px) {
+    
+}
+*/

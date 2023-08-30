@@ -1,0 +1,57 @@
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.all{
+    color: #DDEFDB;
+}
+
+.heading{
+    font-size: 4vw;
+    margin: 3vw;
+    font-family: cursive;
+    margin-left: 8vw;
+    margin-top: 5vh;
+}
+
+.ul1{
+    font-size: 1.5vw;
+    width: 48vw;
+    height: 31vw;
+    margin-left: 10vw;
+}
+
+.li1{
+    margin-bottom: 2vw;
+}
+
+.rect{
+    background-color: #E1AD01;
+    height: 26vw;
+    width: 36vw;
+    color: #0D5325;
+    font-family:'Inter';
+    margin-left: 7vw;
+}
+
+.about{
+    display: flex;
+    margin-top: 5vh;
+}
+
+.heading2{
+    font-size: 2.5vw;
+    margin: 1vw;
+    text-decoration-line: underline;
+    text-decoration-color: #0D5325;
+}
+
+.ul2{
+    font-size: 1.8vw;
+}
+
+.li2{
+    margin-bottom: .3vw;
+}

@@ -1,0 +1,43 @@
+.heading{
+    font-size: 4vw;
+    font-family: cursive;
+    color: #DDEFDB;
+    margin: 5vh 2vw 5vh 8vw;
+}
+
+.text{
+    color: #DDEFDB;
+    font-size: 1.7vw;
+    margin-left: 15vw;
+    width: 78vw;
+    height: 6vw;
+}
+
+.rect{
+    background-color: #E1AD01;
+    width: 52vw;
+    height: 21vw;
+    margin-left: 21vw;
+    margin-top: 12vh;
+    font-weight: 640;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    font-size: 1.8vw;
+    border-radius: 3vw 3vw 0 0;
+    color: #0D5325;
+}
+
+.indiv{
+    display: flex;
+    height: 3.7vw;
+}
+
+.icon{
+    height: 2.4vw;
+    width: 2.5vw;
+}
+
+.info{
+    margin-left: 1.5vw;
+    font-family: cursive;
+}
