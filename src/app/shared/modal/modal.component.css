@@ -1,16 +1,21 @@
+.buttons{
+  display:flex;
+  margin-top: 16vh;
+  margin-bottom: 3vh;
+}
 .button{
     background-color: #D396BE; /* Green */
     border: none;
     border-radius: 2vw;
     color: #0D5325;
-    padding: 0 5vw;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
-    margin-top: 16vh;
-    margin-bottom: 3vh;
+    margin-right: 3vw;
+
   }
 
   .modal-content{

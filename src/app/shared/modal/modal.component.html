@@ -1,32 +1,72 @@
-<button type="button" class="btn button" (click)="openPopup()">Let's Collaborate</button>
-<div
-  class="modal tab"
-  tabindex="-1"
-  role="dialog"
-  [ngStyle]="{'display':displayStyle}">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Contact: </h4>
-      </div>
-      <div class="modal-body  ">
-        <label>You can contact me for collaboration by providing your email address</label>
-
-        <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-          <label class="label">Email :</label>
-          <input formControlName="name" />
-
-          <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div>
-          <div>
-            <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
+<div class="buttons">
+  <button type="button" class="btn button" (click)="openProjectsPopup()">My projects</button>
+  <div class="overlay" (click)="closeProjectsPopup()" [ngStyle]="{'display': displayStyleProjects}">
+    <div
+      class="modal tab"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyleProjects}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">My projects</h4>
           </div>
-        </form>
+          <div class="modal-body">
+            <label>You can view the latest projects done by me:</label>
 
+            <!-- <form [formGroup]="emailFormProjects" (ngSubmit)="onSubmit()">
+              <label class="label">Email :</label>
+              <input formControlName="name" />
+
+              <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div>
+              <div>
+                <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
+              </div>
+            </form> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" 
+              (click)="closeProjectsPopup()">Close
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" 
-          (click)="closePopup()">Close
-        </button>
+    </div>
+  </div>
+
+  
+  <button type="button" class="btn button" (click)="openPopup()">Let's Collaborate</button>
+  <div class="overlay" (click)="closePopup()" [ngStyle]="{'display': displayStyle}">
+    <div
+      class="modal tab"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyle}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Contact: </h4>
+          </div>
+          <div class="modal-body  ">
+            <label>You can contact me for collaboration by providing your email address</label>
+
+            <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+              <label class="label">Email :</label>
+              <input formControlName="name"/>
+
+              <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div>
+              <div>
+                <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" 
+              (click)="closePopup()">Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

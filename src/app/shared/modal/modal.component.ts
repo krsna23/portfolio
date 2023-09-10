@@ -22,7 +22,16 @@ export class ModalComponent {
   
   ngOnInit() {}
   displayStyle = "none";
+  displayStyleProjects = "none";
+
+  openProjectsPopup() {
+    this.displayStyleProjects = "block";
+  }
   
+  closeProjectsPopup() {
+    this.displayStyleProjects = "none";
+  }
+
   openPopup() {
     this.displayStyle = "block";
   }
