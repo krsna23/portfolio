@@ -55,3 +55,51 @@
 .li2{
     margin-bottom: .3vw;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    
+    .heading{
+
+        font-size: 8vw;
+        margin: 3vw;
+        margin-left: 8vw;
+        margin-top: 8vh;
+        padding-top: 12vh;
+    }
+    
+    .ul1{
+        font-size: 3.8vw;
+        width: 58vw;
+        height: fit-content;
+        margin-left: 1vw;
+    }
+    
+    
+    .rect{
+        height: fit-content;
+        width: 41vw;
+        margin-left: 4vw;
+        height: fit-content;
+    }
+    
+    .about{
+        display: flex;
+        margin-top: 5vh;
+    }
+    
+    .heading2{
+        font-size: 4.5vw;
+        margin: 1vw;
+    }
+    
+    .ul2{
+        font-size: 3.8vw;
+    }
+    
+    .li2{
+        margin-bottom: .3vw;
+    }
+    
+}

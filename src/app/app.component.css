@@ -47,3 +47,22 @@ nav {
     font-weight: 30%;
     color: #a3b3a1;
 }
+
+
+/* For Mobile screens */
+
+@media only screen and (max-width: 600px) {
+    .navbar-nav{
+        margin-right: -8vw;
+    } 
+
+    .nav-link{
+        font-size: 4.5vw;
+    }
+    
+    .nav-link.active{
+        font-size: 6vw;
+        font-weight: 30%;
+        color: #a3b3a1;
+    }
+}

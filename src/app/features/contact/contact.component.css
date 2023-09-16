@@ -41,3 +41,44 @@
     margin-left: 1.5vw;
     font-family: cursive;
 }
+
+
+
+@media screen and (max-width: 767px) {
+
+    .heading{
+
+        margin-top: 8vh;
+        padding-top: 12vh;
+        font-size: 8vw;
+    }
+    
+    .text{
+        font-size: 4vw;
+        margin: 8vh 8vw 25vh 8vw;
+    }
+    
+    .rect{
+        width: 90vw;
+        height:20vh;
+        margin-left: 5vw;
+        font-size: 4.5vw;
+    }
+    
+    .indiv{
+        display: flex;
+        height: 7.5vw;
+    }
+    
+    .icon{
+        height: 5.4vw;
+        width: 5.5vw;
+        margin-left: 1vw;
+    }
+    
+    .info{
+        margin-left: 3.5vw;
+    }
+    
+
+}
