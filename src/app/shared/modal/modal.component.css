@@ -4,13 +4,14 @@
   margin-bottom: 3vh;
 }
 .button{
-    background-color: #D396BE; /* Green */
-    border: none;
+    background-color: transparent; /* Green */
+    border: #D396BE;
     border-radius: 2vw;
     color: #0D5325;
-
     text-align: center;
     text-decoration: none;
+
+    
     display: inline-block;
     font-size: 2vw;
     font-weight: bold;

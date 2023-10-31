@@ -3,26 +3,68 @@ body, html {
   }
 
 .all{
-    background-image: url("https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60); */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
     min-width: 100%;
-    min-height: 100%;
+    height: 90vh;
+    z-index: 1;
+}
+.shape1{
+    width: 5vw;
+    height:55vh;
+    z-index: 2;
+    position:absolute;
+    background-color: #2a2621;
+    animation: shape1 15s linear infinite;
+
 }
 
+.icon{
+    width: 3vw;
+    margin-left: 1vw;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+@keyframes shape1{
+    0%{
+        opacity: 0.1;
+    }
+    25%{
+        opacity: .5;
+    }
+    50%{
+        opacity: .8;
+    }
+    78%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
 
 .logo{
-    width: 7.5vw;
+    width: 3.5vw;
     height: auto;
 }
 
-
 .nav-button{
-    background-color: #E1AD01;
     color: #0C3F04;
     border-radius: 12%;
     width: fit-content;
     text-align: center;
     font-weight: 500;
 }
+
+.nav-link:hover {
+    /* background-color: #0C3F04;  */
+    color: #c3be98; /* Change the text color on hover */
+    font-size: 2vw;
+    border-radius: 15px;
+    transition: width 2s;
+}
+
 .all {
     height: 100%;
   }
@@ -36,16 +78,24 @@ nav {
 }
 
 .nav-link{
-    margin-left: 7%;
     color: #DDEFDB;
-    font-size: 2.2vw;
+    font-size: 1.5vw;
     font-weight: 25%;
+    padding-left: 6vw;
+    margin-left: 3vw;
 }
 
 .nav-link.active{
-    font-size: 2.4vw;
+    font-size: 2vw;
     font-weight: 30%;
     color: #a3b3a1;
+    border: inset;
+    border-radius: 7px;
+    border-right: none;
+    border-top: none;
+    background: transparent;
+
+    
 }
 
 

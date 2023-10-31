@@ -28,7 +28,8 @@
 }
 
 .rect{
-    background-color: #E1AD01;
+    /* background-color: #E1AD01; */
+    background-color: #0D5325;
     height: 26vw;
     width: 36vw;
     color: #0D5325;

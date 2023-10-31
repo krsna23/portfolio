@@ -2,8 +2,17 @@
     color: #DDEFDB;
     height: 100%;
     margin-top: 18vh;
-    margin-left: 11vw;
+    margin-left: 17vw;
 }
+
+/* .shape1{
+    width:12vw;
+    height:18vw;
+    z-index: 2;
+    position:relative;
+
+    background-color: #4d453a;
+} */
 
 .line{
     display: flex;
@@ -19,8 +28,8 @@
 }
 
 .name{
-    font-size:6vw;
-    margin-left: 3px;
+    font-size: 5.3vw;
+    margin-left: -3vw;
     color: #D396BE;
 }
 
@@ -51,9 +60,36 @@
 .photo{
     height: 35vw;
     width: 28vw;
-    margin-left: 12vw;
+    margin-left: 17vw;
     opacity: 60%;
     border-radius: 8vw;
+}
+
+.accordion-button{
+    background: transparent;
+    font-size: 2vw;
+    color: white;
+}
+
+.accordion-item{
+    background: transparent;
+    border: none;
+}
+
+.accordion{
+border: none;
+width: 34vw;
+}
+
+.job-title{
+    color: #D396BE;
+}
+.title-line{
+    display:flex;
+}
+
+.about-toggle{
+    margin-left:7vw;
 }
 
 
