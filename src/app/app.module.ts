@@ -3,6 +3,7 @@ import { FeaturesModule } from './features/features.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
+import { ProjectsComponent } from './features/projects/projects.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './Home/content/content.component';
@@ -15,7 +16,8 @@ const routes: Routes = []
 @NgModule({
     declarations: [
         AppComponent,
-        ContentComponent, 
+        ContentComponent,
+        ProjectsComponent 
     ],
     exports: [ContentComponent],
     providers: [],

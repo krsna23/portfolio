@@ -3,17 +3,16 @@ import { CommonModule } from '@angular/common';
 import { FeaturesRoutingModule } from './features-routing.module';
 
 import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ContactComponent } from './contact/contact.component';
-import { ContentComponent } from '../Home/content/content.component';
+import { ProjectSliderComponent } from './projects/project-slider/project-slider.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
-    ProjectsComponent,
     CertificationsComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectSliderComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +20,8 @@ import { ContentComponent } from '../Home/content/content.component';
   ],
   exports: [
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectSliderComponent
   ]
 })
 

@@ -93,14 +93,38 @@
 <div>
 
   <div class="shape1" style="z-index:2">
-    <img alt="location" class="icon" src="../assets/images/location.png" />
-    <img alt="github" class="icon" src="../assets/images/github.png" />
-    <img alt="mail" class="icon" src="../assets/images/gmail.png" />
-    <img alt="linkedin" class="icon" src="../assets/images/linkedin.png" />
-    <img alt="location" class="icon" src="../assets/images/whatsapp.png" />
+    <a 
+    href="https://www.google.com/maps/place/Jayanagar,+Bengaluru,+Karnataka/@12.9292123,77.587155,14z/data=!3m1!4b1!4m6!3m5!1s0x3bae15986765d7d9:0xbba2fea7014e5087!8m2!3d12.9307735!4d77.5838302!16zL20vMDRjMzBx?entry=ttu" 
+    data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Jayanagar, Bangalore">
+      <img alt="location" class="icon" src="../assets/images/location.png" />
+    </a>
+    <a 
+      href="https://github.com/krsna23"
+      data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="github/krsna23"
+    >
+      <img alt="github" class="icon" src="../assets/images/github.png" />
+    </a>
+    <a 
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=adh.krishna23@gmail.com&su=Collaborate_From_Website"
+      data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="adh.krishna23@gmail.com"
+    >
+      <img alt="mail" class="icon" src="../assets/images/gmail.png" />
+    </a>
+    <a 
+      href="https://www.linkedin.com/in/krishna-adhikari-4b000924a/"
+      data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="krishna-adhikari-4b000924a"
+    >
+      <img alt="linkedin" class="icon" src="../assets/images/linkedin.png" />
+    </a>
+    <a 
+    href="https://api.whatsapp.com/send?phone=9148558301"
+    data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="+91-9148558301"
+  >
+    <img alt="whatsapp" class="icon" src="../assets/images/whatsapp.png" />
+  </a>
   </div>
 <router-outlet *ngIf="!isSmallScreen"></router-outlet>
-
+<app-projects></app-projects>
 <app-about 
   id="about">
 </app-about>
