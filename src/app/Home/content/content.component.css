@@ -2,7 +2,7 @@
     color: #DDEFDB;
     height: 100%;
     margin-top: 18vh;
-    margin-left: 17vw;
+    margin-left: 16vw;
 }
 
 /* .shape1{
@@ -83,13 +83,15 @@ width: 34vw;
 
 .job-title{
     color: #D396BE;
+    width: max-content;
 }
+
 .title-line{
     display:flex;
 }
 
 .about-toggle{
-    margin-left:7vw;
+    margin-left:5vw;
 }
 
 
