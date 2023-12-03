@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SlideInterface } from './interface/slide-interface';
 
 @Component({
   selector: 'app-root',

@@ -1,4 +1,46 @@
 .lead{
     color: white;
-    font-size: 8vw;
+    font-size: 4vw;
+    margin: 4vh 20vw;
+}
+
+
+.card{
+    width: 90vw;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+}
+
+.card-title{
+    margin: 4vh 10vw;
+}
+
+.card-img{
+    height: 40vh;
+}
+
+.card-text{
+    margin: 4vh 2vw;
+
+}
+
+
+.icon{
+    width: 3vw;
+    cursor: pointer;
+}
+
+.inline{
+    display: flex;
+    background:none;
+    border: none;
+}
+
+.code-title{ 
+    margin-left: 1vw;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
 }
