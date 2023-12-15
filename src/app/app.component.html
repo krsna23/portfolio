@@ -7,11 +7,12 @@
   >
 	<title>Personal Portfolio</title>
 </head>
+
 <div class="all">
-  <nav class="navbar sticky-top navbar-expand">
+  <nav id="navbar" class="fixed-top navbar navbar-expand ">
     <div class="container-fluid">
       <a class="navbar-brand" 
-      routerLink="">
+        routerLink="">
         <img 
           class="logo" 
           src="../assets/images/Logo.png" 
@@ -35,35 +36,68 @@
         class="collapse navbar-collapse container-fluid" 
         id="navbarNavAltMarkup"
       >
-        <div 
-          *ngIf="!isSmallScreen" 
-          class="navbar-nav ms-auto w-50 p-3"
-        >
-          <a 
+      <!-- <div 
+        *ngIf="!isSmallScreen" 
+        class="navbar-nav ms-auto w-50 p-3"
+      > -->
+          <!-- <a 
             class="nav-link" 
             aria-current="page" 
             [routerLinkActive]="['active']" 
             [routerLinkActiveOptions]="{exact:true}" 
             routerLink="" 
           >Home
-          </a>          
+          </a>
           <a 
             class="nav-link" 
             aria-current="page" 
             [routerLinkActive]="['active']" 
             routerLink="/about"
-          >About
+           >About
+          </a>
+          <a 
+            class="nav-link" 
+            aria-current="page" 
+            [routerLinkActive]="['active']" 
+            routerLink="/projects"
+          >Projects
           </a>
           <a 
             class="nav-link" 
             [routerLinkActive]="['active']" 
             routerLink="/contacts">Contact 
+          </a> -->
+
+
+        <div  
+          class="navbar-nav ms-auto w-50 p-3"
+        >
+            <a 
+            class="nav-link" 
+            href="#content"
+          >Home
+          </a>
+          <a 
+            class="nav-link" 
+            href="#about"
+          >About
+          </a>
+          <a 
+            class="nav-link" 
+            href="#projects"
+          >Projects
+          </a>
+          <a 
+            class="nav-link" 
+            href="#contact"
+          >Contact 
           </a>
         </div>
+      </div>
 
 
 
-        <!-- <div *ngIf="isSmallScreen" class="navbar-nav ms-auto w-50 p-3"> -->
+      <!-- <div *ngIf="isSmallScreen" class="navbar-nav ms-auto w-50 p-3">
         <div 
           *ngIf="isSmallScreen" 
           class="navbar-nav ms-auto w-50 p-3"
@@ -87,30 +121,33 @@
             href="#contact">Contact 
           </a>
         </div>
-      </div>
+
+      </div> -->
+
     </div>
   </nav>
 <div>
 
+
   <div class="shape1" style="z-index:2">
-    <a 
-    href="https://www.google.com/maps/place/Jayanagar,+Bengaluru,+Karnataka/@12.9292123,77.587155,14z/data=!3m1!4b1!4m6!3m5!1s0x3bae15986765d7d9:0xbba2fea7014e5087!8m2!3d12.9307735!4d77.5838302!16zL20vMDRjMzBx?entry=ttu" 
+      <a 
+      href="https://www.google.com/maps/place/Jayanagar,+Bengaluru,+Karnataka/@12.9292123,77.587155,14z/data=!3m1!4b1!4m6!3m5!1s0x3bae15986765d7d9:0xbba2fea7014e5087!8m2!3d12.9307735!4d77.5838302!16zL20vMDRjMzBx?entry=ttu" 
     data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Jayanagar, Bangalore">
       <img alt="location" class="icon" src="../assets/images/location.png" />
     </a>
-    <a 
+    <a
       href="https://github.com/krsna23"
       data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="github/krsna23"
     >
       <img alt="github" class="icon" src="../assets/images/github.png" />
     </a>
-    <a 
+    <a
       href="https://mail.google.com/mail/?view=cm&fs=1&to=adh.krishna23@gmail.com&su=Collaborate_From_Website"
       data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="adh.krishna23@gmail.com"
     >
       <img alt="mail" class="icon" src="../assets/images/gmail.png" />
     </a>
-    <a 
+    <a
       href="https://www.linkedin.com/in/krishna-adhikari-4b000924a/"
       data-bs-custom-class="custom-tooltip" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="krishna-adhikari-4b000924a"
     >
@@ -123,18 +160,29 @@
     <img alt="whatsapp" class="icon" src="../assets/images/whatsapp.png" />
   </a>
   </div>
-<router-outlet *ngIf="!isSmallScreen"></router-outlet>
-<app-about 
-  id="about">
-</app-about>
-<app-projects></app-projects>
 
+<!-- <router-outlet *ngIf="!isSmallScreen"></router-outlet> -->
+<div data-bs-spy="scroll" data-bs-target="#navbar">
+
+<app-content id="content"
+>
+</app-content>
+
+<app-about 
+  id="about"  
+>
+</app-about>
+
+<app-projects  id = "projects" 
+  
+></app-projects>
 
 <app-contact 
   id="contact">
 </app-contact>
 
-<app-content 
+<!-- 
+<app-content
   *ngIf="isSmallScreen" 
   id="content">
 </app-content>
@@ -146,4 +194,5 @@
 <app-contact 
   *ngIf="isSmallScreen" 
   id="contact">
-</app-contact>
+</app-contact> -->
+</div>

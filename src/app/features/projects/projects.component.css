@@ -1,7 +1,18 @@
-.lead{
-    color: white;
+.project{
+    padding-top: 13vh;
+    padding-bottom: 2vh;
+    /* background-color: rgb(238, 238, 238); */
+    background: (rgba(133, 133, 133, 0.17),
+     rgba(13, 11, 11,.1));
+
+}
+
+.heading{
     font-size: 4vw;
-    margin: 4vh 20vw;
+    margin: 3vw;
+    font-family: cursive;
+    margin-left: 8vw;
+    margin-top: 5vh;
 }
 
 
@@ -9,6 +20,8 @@
     width: 90vw;
     margin-bottom: 5vh;
     margin-left: 5vw;
+    color: #0D5325;
+    background-color: #a68002;
 }
 
 .card-title{
@@ -16,14 +29,13 @@
 }
 
 .card-img{
-    height: 40vh;
+    height: 45vh;
 }
 
 .card-text{
     margin: 4vh 2vw;
 
 }
-
 
 .icon{
     width: 3vw;
@@ -43,4 +55,27 @@
 .links{
     display: flex;
     justify-content: space-around;
+}
+
+/*For making mobile responsive:*/
+@media screen and (max-width: 767px) {
+
+    .project{
+        padding-top: 7vh;
+    }
+
+    .heading{
+        font-size: 8vw;
+        margin-bottom: 6vh;
+    }
+    
+    .icon{
+        height: 5vw;
+        cursor: pointer;
+    }
+
+    .card-img{
+        height: 40vh;
+    }
+
 }

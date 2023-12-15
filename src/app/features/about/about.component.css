@@ -1,4 +1,5 @@
 /* CSS */
+
 :root { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
@@ -6,6 +7,7 @@
 
 .all{
     color: #DDEFDB;
+    padding-top: 1vh;
 }
 
 .heading{
@@ -13,7 +15,7 @@
     margin: 3vw;
     font-family: cursive;
     margin-left: 8vw;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 .ul1{
@@ -27,19 +29,22 @@
     margin-bottom: 2vw;
 }
 
+
 .rect{
     /* background-color: #E1AD01; */
-    background-color: #0D5325;
-    height: 26vw;
+    background-color: #bd940b;
+    height: fit-content;
     width: 36vw;
     color: #0D5325;
     font-family:'Inter';
+    font-weight: bold;
     margin-left: 7vw;
 }
 
 .about{
     display: flex;
     margin-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .heading2{
@@ -55,54 +60,6 @@
 
 .li2{
     margin-bottom: .3vw;
-}
-
-
-@media screen and (max-width: 767px) {
-
-    
-    .heading{
-
-        font-size: 8vw;
-        margin: 3vw;
-        margin-left: 8vw;
-        margin-top: 8vh;
-        padding-top: 12vh;
-    }
-    
-    .ul1{
-        font-size: 3.8vw;
-        width: 58vw;
-        height: fit-content;
-        margin-left: 1vw;
-    }
-    
-    
-    .rect{
-        height: fit-content;
-        width: 41vw;
-        margin-left: 4vw;
-        height: fit-content;
-    }
-    
-    .about{
-        display: flex;
-        margin-top: 5vh;
-    }
-    
-    .heading2{
-        font-size: 4.5vw;
-        margin: 1vw;
-    }
-    
-    .ul2{
-        font-size: 3.8vw;
-    }
-    
-    .li2{
-        margin-bottom: .3vw;
-    }
-    
 }
 
 
@@ -122,7 +79,7 @@
 }
 .main-timeline .timeline-content{
     color: #555;
-    background: #fff;
+    background: hsl(0, 0%, 96%);
     min-height: 130px;
     padding: 30px 150px 30px 30px;
     border-top: none;
@@ -228,3 +185,86 @@
 }
 
 /* End of css for timeline */
+
+
+@media screen and (max-width: 767px) {
+
+    .heading{
+        font-size: 8vw;
+        margin-top: 8vh;
+        padding-top: 12vh;
+    }
+
+    .ul1{
+        font-size: 3.8vw;
+        width: 58vw;
+        height: fit-content;
+        margin-left: 1vw;
+    }
+    
+    .about{
+        display: block;
+        margin-top: 5vh;
+    }
+
+    .rect{
+        height: fit-content;
+        width: 81vw;
+        margin-left: 9vw;
+        height: fit-content;
+    }
+    
+    .heading2{
+        font-size: 4.5vw;
+        margin: 1vw;
+    }
+    
+    .ul2{
+        font-size: 3.8vw;
+    }
+    
+    .li2{
+        margin-bottom: .3vw;
+    }
+    
+    
+/* Timeline CSS properties for mobile*/
+
+    @media screen and (max-width:767px){
+        .main-timeline .timeline,
+        .main-timeline .timeline:nth-child(even){
+            width: 100%;
+            margin: 0 0 30px;
+        }
+    }
+
+    @media screen and (max-width:576px){
+        .main-timeline .timeline .timeline-content,
+        .main-timeline .timeline:nth-child(even) .timeline-content{
+            text-align: center;
+            padding: 130px 25px 25px;
+        }
+        .main-timeline .timeline .timeline-content:before,
+        .main-timeline .timeline:nth-child(even) .timeline-content:before{
+            height: 70px;
+            width: 100%;
+        }
+        .main-timeline .timeline-icon,
+        .main-timeline .timeline:nth-child(even) .timeline-icon{
+            transform: translateY(0) translateX(-50%);
+            top: 16px;
+            left: 50%;
+            right: auto;
+        }
+        .main-timeline .timeline-year,
+        .main-timeline .timeline:nth-child(even) .timeline-year{
+            transform: translateY(0) translateX(-50%);
+            top: 80px;
+            left: 50%;
+            right: auto;
+        }
+    }
+
+    /* End of css for timeline for mobile.*/
+
+}

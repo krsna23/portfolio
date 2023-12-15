@@ -1,8 +1,11 @@
+.all{
+    padding-top: 14vh;
+}
 .heading{
     font-size: 4vw;
     font-family: cursive;
     color: #DDEFDB;
-    margin: 5vh 2vw 5vh 8vw;
+    margin: 5vh 2vw 8vh 8vw;
 }
 
 .text{
@@ -14,7 +17,7 @@
 }
 
 .rect{
-    background-color: #4d3b00;
+    background-color: #a68002;
     width: 52vw;
     height: 21vw;
     margin-left: 21vw;
@@ -30,8 +33,13 @@
 .indiv{
     display: flex;
     height: 3.7vw;
+    cursor: pointer;
 }
 
+.disable-styles {
+    all: unset; /* Remove all styles */
+  }
+  
 .icon{
     height: 2.4vw;
     width: 2.5vw;
@@ -46,16 +54,19 @@
 
 @media screen and (max-width: 767px) {
 
-    .heading{
+    .all{
+        padding-top: 7vh;
+    }
 
-        margin-top: 8vh;
-        padding-top: 12vh;
+    .heading{
+        margin-top: 4vh;
         font-size: 8vw;
     }
     
     .text{
-        font-size: 4vw;
-        margin: 8vh 8vw 25vh 8vw;
+        font-size: 3.6vw;
+        margin: 8vh 2vw 15vh 2vw;
+        width: 96vw;
     }
     
     .rect{
@@ -79,6 +90,7 @@
     .info{
         margin-left: 3.5vw;
     }
+    
     
 
 }

@@ -1,7 +1,7 @@
 .content{
     color: #DDEFDB;
     height: 100%;
-    margin-top: 18vh;
+    padding-top: 22vh;
     margin-left: 16vw;
 }
 
@@ -10,7 +10,6 @@
     height:18vw;
     z-index: 2;
     position:relative;
-
     background-color: #4d453a;
 } */
 
@@ -57,6 +56,10 @@
     display: flex;
   }
 
+.text{
+    padding-top: 8vh;
+}
+
 .photo{
     height: 35vw;
     width: 28vw;
@@ -69,6 +72,7 @@
     background: transparent;
     font-size: 2vw;
     color: white;
+    width: fit-content;
 }
 
 .accordion-item{
@@ -79,6 +83,30 @@
 .accordion{
 border: none;
 width: 34vw;
+}
+
+.cards{
+    display: flex;
+    width: 47vw;
+}
+
+.card{
+    background: none;
+    color: #a68002;
+    width: 35vw;
+    margin-left: -3vw;
+    margin-right: 5vw;
+}
+
+.card-title{
+    width: 18vw;
+    margin-bottom: 2vh;
+}
+
+.list-group-item{
+    background: none;
+    background-color: #a68002;
+    text-align: center;
 }
 
 .job-title{
@@ -92,14 +120,16 @@ width: 34vw;
 
 .about-toggle{
     margin-left:5vw;
+    width: 7vw;
+    color: #D396BE;
 }
 
 
 /*For making mobile responsive:*/
 @media screen and (max-width: 767px) {
-    
+
     .content{
-        margin-top: 14vh;
+        padding-top: 14vh;
         margin-left: 3vw;
     }
     
@@ -111,16 +141,21 @@ width: 34vw;
     .hello{
         font-size: 12vw;
     }
-    
+
     .text2{
         font-size: 8vw;
     }
     
     .name{
-        font-size:16vw;
-        margin-left: 3px;
+        font-size:8vw;
+        margin-left: 3.6px;
         color: #D396BE;
     }
+    
+    .accordion-button{
+        margin-top: 3vh;
+    }
+
     
     .para{
         font-size: 6vw;
@@ -156,4 +191,38 @@ width: 34vw;
         border-radius: 8vw;
     }
 
+        
+    .accordion-button{
+        font-size: 3.6vw;
+    }
+
+    .accordion-item{
+        background: transparent;
+        border: none;
+    }
+
+    .accordion{
+    border: none;
+    width: 34vw;
+    }
+
+    .cards{
+        width: 87vw;
+        display: block;
+    }
+
+    .card{
+        width: 85vw;
+        margin-left: -3vw;
+        margin-right: 5vw;
+    }
+
+    .card-title{
+        width: fit-content;
+        margin-bottom: 2vh;
+    }
+
+    .about-toggle{
+        width: 10vw;
+    }
 }
