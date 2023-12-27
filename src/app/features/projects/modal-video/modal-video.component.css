@@ -1,0 +1,69 @@
+.icon{
+    width: 3vw;
+    cursor: pointer;
+}
+
+.inline{
+    display: flex;
+    background:none;
+    border: none;
+}
+
+.code-title{ 
+    margin-left: 1vw;
+}
+
+.modal{
+    display: block;
+    padding: 1vh 1vw;
+}
+
+.modal-body{
+    padding: 0;
+}
+
+iframe{
+    height: 70vh;
+    width: 60vw;
+    margin: 0 25vh;
+}
+
+.modal-dialog{
+    width: 90vw;
+    height: 80vh;
+    max-width: 100vw;
+}
+
+.modal-footer{
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .icon{
+        width: auto;
+        cursor: pointer;
+        height: 2.4vh;
+    }
+
+    .modal{
+        display: block;
+        padding: 1vh 1vw;
+    }
+    
+    .modal-body{
+        padding: 0;
+    }
+    
+    iframe{
+        height: 38vh;
+        width: 81vw;
+        margin-left: 3vw;
+    }
+    
+    .modal-dialog{
+        width: 90vw;
+        height: 80vh;
+        max-width: 100vw;
+    }
+}

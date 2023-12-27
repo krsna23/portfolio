@@ -2,9 +2,10 @@
     padding-top: 13vh;
     padding-bottom: 2vh;
     /* background-color: rgb(238, 238, 238); */
-    background: (rgba(133, 133, 133, 0.17),
-     rgba(13, 11, 11,.1));
-
+    background: linear-gradient(
+        rgba(5, 66, 1, 0.11), 
+        rgba(0, 70, 14, 0.21)
+    )
 }
 
 .heading{
@@ -70,7 +71,8 @@
     }
     
     .icon{
-        height: 5vw;
+        height: 4.5vw;
+        width: auto;
         cursor: pointer;
     }
 

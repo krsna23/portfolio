@@ -92,6 +92,7 @@ nav {
 
 .navbar-nav{
     justify-content: end;
+    margin-right: 7vw;
 }
 
 .nav-link{

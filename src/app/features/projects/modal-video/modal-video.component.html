@@ -1,0 +1,56 @@
+
+<button class="inline" (click)="openPopup()">
+    <img alt="video" class="icon" src="../../../assets/images/video.png" />
+    <p class="code-title">demo</p>
+</button>
+
+ 
+<div class="overlay" (click)="closePopup()" [ngStyle]="{'display': displayStyle}">
+  <div
+    class="modal tab"
+    tabindex="-1"
+    role="dialog"
+    [ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Contact: </h4>
+        </div>
+        <div class="modal-body  ">
+          <!-- <label>You can contact me for collaboration by providing your email address</label> -->
+
+          <iframe 
+            width="80vw" 
+            height="40vh" 
+            [src]="sanitizedSrc" 
+            [title]="title" 
+            frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" 
+            allowfullscreen
+          >
+          </iframe>
+          
+          <!-- <iframe width="670" 
+          height="377" 
+          src="https://www.youtube.com/embed/W1XqsBt_J4U" 
+          title="CarVal project frontend with responsive design" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; 
+          gyroscope; picture-in-picture; 
+          web-share" 
+          allowfullscreen
+          ></iframe> -->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" 
+            (click)="closePopup()">Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -6,13 +6,15 @@ import { AboutComponent } from './about/about.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectSliderComponent } from './projects/project-slider/project-slider.component';
+import { ModalVideoComponent } from './projects/modal-video/modal-video.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
     CertificationsComponent,
     ContactComponent,
-    ProjectSliderComponent
+    ProjectSliderComponent,
+    ModalVideoComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { ProjectSliderComponent } from './projects/project-slider/project-slider
   exports: [
     AboutComponent,
     ContactComponent,
-    ProjectSliderComponent
+    ProjectSliderComponent,
+    ModalVideoComponent
   ]
 })
 

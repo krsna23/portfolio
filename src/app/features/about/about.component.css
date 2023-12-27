@@ -34,11 +34,11 @@
     /* background-color: #E1AD01; */
     background-color: #bd940b;
     height: fit-content;
-    width: 36vw;
+    width: 32vw;
     color: #0D5325;
     font-family:'Inter';
     font-weight: bold;
-    margin-left: 7vw;
+    margin-right: 3vw;
 }
 
 .about{
@@ -48,14 +48,14 @@
 }
 
 .heading2{
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 1vw;
     text-decoration-line: underline;
     text-decoration-color: #0D5325;
 }
 
 .ul2{
-    font-size: 1.8vw;
+    font-size: 1.4vw;
 }
 
 .li2{
@@ -65,7 +65,15 @@
 
 /* Timeline CSS properties */
 
-.main-timeline{ font-family: 'Poppins', sans-serif; }
+ul.a {
+    list-style-type: square;
+  }
+
+.main-timeline{ 
+    font-family: 'Poppins', sans-serif; 
+    width: 60vw;
+    margin-left: 3vw;
+}
 .main-timeline:after{
     content: '';
     display: block;
@@ -79,7 +87,7 @@
 }
 .main-timeline .timeline-content{
     color: #555;
-    background: hsl(0, 0%, 96%);
+    background: hsl(0, 0%, 88%);
     min-height: 130px;
     padding: 30px 150px 30px 30px;
     border-top: none;
@@ -151,6 +159,10 @@
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background-color: #7438B9; }
 .main-timeline .timeline:nth-child(4n+4) .title{ color: #7438B9; }
 @media screen and (max-width:767px){
+    .main-timeline{ 
+        font-family: 'Poppins', sans-serif; 
+        width: 90vw;
+    }
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
         width: 100%;
