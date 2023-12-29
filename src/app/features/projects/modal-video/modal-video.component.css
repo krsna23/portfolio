@@ -43,7 +43,7 @@ iframe{
     .icon{
         width: auto;
         cursor: pointer;
-        height: vh;
+        height: 3vh;
     }
 
     .modal{
