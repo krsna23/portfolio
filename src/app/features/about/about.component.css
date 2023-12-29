@@ -16,17 +16,6 @@
     padding-top: 5vh;
 }
 
-.ul1{
-    font-size: 1.5vw;
-    width: 48vw;
-    height: 31vw;
-    margin-left: 10vw;
-}
-
-.li1{
-    margin-bottom: 2vw;
-}
-
 .rect{
     background-color: #bd940b;
     height: fit-content;
