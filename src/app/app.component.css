@@ -133,12 +133,8 @@ nav {
     }
     
     .nav-link.active{
-        font-size: 2.5vw;
-        border: dotted;
-        border-right: none;
-        border-top: none;
-        background: transparent;
-        height: 3vh;
+        font-size: 2.5vw;;
+        height: 3.3vh;
     }
 
     .shape1{
